@@ -53,7 +53,7 @@ public class AugmentScreenHandler extends ScreenHandler {
             this.addSlot(new Slot(inv, i, SLOT_POS[i][0], SLOT_POS[i][1]) {
                 @Override public boolean canInsert(ItemStack stack) {
                     return switch (idx) {
-                        case DEFENSE_SLOT -> stack.isOf(Items.ARMADILLO_SCUTE);
+                        case DEFENSE_SLOT -> stack.isOf(Items.WOLF_ARMOR);
                         case ATTACK_SLOT  -> stack.isOf(Items.NETHER_BRICK);
                         default -> true;
                     };

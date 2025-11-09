@@ -35,7 +35,7 @@ public class LivingEntityDamageMixin {
 		var sw = (net.minecraft.server.world.ServerWorld) p.getWorld();
 		var state = TargetAugmentState.get(sw);
 		Inventories.TargetInventory inv = state.getOrCreate(p.getUuidAsString());
-		if (!inv.getStack(0).isEmpty() && inv.getStack(0).isOf(Items.ARMADILLO_SCUTE)) {
+		if (!inv.getStack(0).isEmpty() && inv.getStack(0).isOf(Items.WOLF_ARMOR)) {
 			return amount * 0.6f;
 		}
 		return amount;

@@ -9,5 +9,7 @@ public class PlayerEnhancerClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
         HandledScreens.register(AugmentScreenHandlerType.TYPE, AugmentScreen::new);
+
     }
+
 }

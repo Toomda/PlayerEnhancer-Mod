@@ -3,12 +3,16 @@
   "package": "toomda.playerenhancer.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
-    "LivingEntityDamageMixin"
+    "LivingEntityDamageMixin",
+    "MouseMixin"
   ],
   "injectors": {
     "defaultRequire": 1
   },
   "overwrites": {
     "requireAnnotations": true
-	}
+  },
+  "client": [
+    "MouseMixin"
+  ]
 }
