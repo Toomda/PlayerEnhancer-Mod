@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "playerenhancer",
+	"version": "${version}",
+	"name": "PlayerEnhancer",
+	"description": "This mod allows you to right click a player in the world and give them stats!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/playerenhancer/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"toomda.playerenhancer.PlayerEnhancer"
+		],
+		"client": [
+			"toomda.playerenhancer.PlayerEnhancerClient"
+		]
+	},
+	"mixins": [
+		"playerenhancer.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.17.3",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
